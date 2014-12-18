@@ -2,6 +2,7 @@
  * Created by vledrapier on 15/12/2014.
  */
 package airws.main {
+import airws.game.GameManager;
 import airws.main.*;
 
 import flash.filesystem.File;
@@ -16,7 +17,8 @@ import starling.utils.AssetManager;
 public class AppManager extends Sprite
 {
 
-    var _assets:AssetManager;
+    private var _assets:AssetManager;
+    private var gameManager:GameManager;
     //var car:Car;
 
     public function AppManager() {
@@ -27,20 +29,12 @@ public class AppManager extends Sprite
         loadAssets();
     }
 
-    private function initUI() {
-        //car = new Car(assets);
-        //car.scaleX = 0.5;
-        //car.scaleY = 0.5;
-        //addChild(car);
-    }
-
     private function loadAssets() {
         _assets = new AssetManager();
         var appDir:File = File.applicationDirectory;
         _assets.enqueue(appDir.resolvePath("assets/"));
 
-        _assets.loadQueue(function(ratio:Number):void
-        {
+        _assets.loadQueue(function(ratio:Number):void {
             trace('loading...', ratio);
             if (ratio >= 1.0) {
                 onAssetsLoaded();
@@ -50,18 +44,12 @@ public class AppManager extends Sprite
 
     private function onAssetsLoaded():void {
         trace("assets loaded");
-        Splash.fadeOut();
-        initUI();
+        Splash.hide();
+        initGameManager();
     }
 
-    private function _onTouch(event:TouchEvent):void {
-
+    private function initGameManager():void {
+        gameManager = new GameManager();
     }
-
-    private function _onEnterFrame(event:Event):void {
-    }
-
-
-
 }
 }

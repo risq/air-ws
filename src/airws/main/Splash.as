@@ -24,7 +24,7 @@ public class Splash extends Sprite {
         splashTexture = new SplashImage();
     }
 
-    public static function fadeOut() {
+    public static function hide() {
         tween = new Tween(splashTexture, 0.2);
         tween.animate("alpha", 0);
         tween.onComplete = onFadeOutComplete;
