@@ -1056,7 +1056,7 @@ public class GlobalizationValidatorBase extends GlobalizationBase
 
     /**
      *  @private
-     *  Main internally used function to handle validation process.
+     *  airws.main.Main internally used function to handle validation process.
      */
     private function processValidation(
                         value:Object,

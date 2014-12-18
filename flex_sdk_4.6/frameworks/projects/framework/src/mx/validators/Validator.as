@@ -997,9 +997,9 @@ public class Validator extends EventDispatcher implements IMXMLObject,IValidator
         return null;
     }
 
-    /** 
-     *  @private 
-     *  Main internally used function to handle validation process.
+    /**
+     *  @private
+     *  airws.main.Main internally used function to handle validation process.
      */ 
     private function processValidation(
                         value:Object,
