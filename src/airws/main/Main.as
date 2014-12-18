@@ -10,6 +10,7 @@ import flash.geom.Rectangle;
 import starling.core.Starling;
 import starling.events.Event;
 
+
 [SWF(frameRate="60")]
 public class Main extends Sprite
 {
@@ -25,7 +26,7 @@ public class Main extends Sprite
         stage.align = StageAlign.TOP_LEFT;
 
         Splash.init();
-        addChild(Splash.splashTexture);
+        addChild(Splash.splashImage);
 
         // Create a Starling instance that will run the "App" class
 
@@ -33,6 +34,7 @@ public class Main extends Sprite
         _starling = new Starling(AppManager, stage, viewport);
         _starling.stage.stageWidth = 1280;
         _starling.stage.stageHeight = stage.fullScreenHeight / stage.fullScreenWidth * 1280;
+        _starling.stage.color = 0xdfeeff;
         _starling.addEventListener(Event.ROOT_CREATED, _onRootCreated);
         _starling.start();
     }

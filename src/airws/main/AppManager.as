@@ -2,7 +2,8 @@
  * Created by vledrapier on 15/12/2014.
  */
 package airws.main {
-import airws.game.GameManager;
+import airws.game.gameManager.GameManager;
+import airws.game.gameManager.GameManagerEvent;
 import airws.main.*;
 
 import flash.filesystem.File;
@@ -17,7 +18,7 @@ import starling.utils.AssetManager;
 public class AppManager extends Sprite
 {
 
-    private var _assets:AssetManager;
+    private var assetManager:AssetManager;
     private var gameManager:GameManager;
     //var car:Car;
 
@@ -30,11 +31,11 @@ public class AppManager extends Sprite
     }
 
     private function loadAssets() {
-        _assets = new AssetManager();
+        assetManager = new AssetManager();
         var appDir:File = File.applicationDirectory;
-        _assets.enqueue(appDir.resolvePath("assets/"));
+        assetManager.enqueue(appDir.resolvePath("assets/"));
 
-        _assets.loadQueue(function(ratio:Number):void {
+        assetManager.loadQueue(function(ratio:Number):void {
             trace('loading...', ratio);
             if (ratio >= 1.0) {
                 onAssetsLoaded();
@@ -43,13 +44,21 @@ public class AppManager extends Sprite
     }
 
     private function onAssetsLoaded():void {
-        trace("assets loaded");
+        trace("assetManager loaded");
         Splash.hide();
         initGameManager();
     }
 
     private function initGameManager():void {
-        gameManager = new GameManager();
+        gameManager = new GameManager(stage, assetManager);
+        gameManager.addEventListener(GameManagerEvent.GAMEMANAGER_LOADED, onGameManagerLoaded);
+        gameManager.init();
     }
+
+    private function onGameManagerLoaded(event:GameManagerEvent):void {
+        trace("Game manager loaded");
+    }
+
+
 }
 }
