@@ -4,7 +4,7 @@
 package airws.game.gameManager {
 import airws.game.game.Game;
 import airws.game.game.GameEvent;
-import airws.level.LevelLoaded.LevelLoader;
+import airws.level.levelLoader.LevelLoader;
 
 import starling.display.Stage;
 import starling.events.EventDispatcher;
@@ -17,11 +17,11 @@ public class GameManager extends EventDispatcher {
     private var levelLoader:LevelLoader;
     //private var assetManager:AssetManager;
 
-    public function GameManager(stage: Stage, assetManager:AssetManager) {
+    public function GameManager(stage: Stage) {
         this.stage = stage;
         //this.assetManager = assetManager;
 
-        levelLoader = new LevelLoader(assetManager);
+        levelLoader = new LevelLoader();
     }
 
     public function init(): void {
@@ -32,6 +32,7 @@ public class GameManager extends EventDispatcher {
 
     private function onGameLoaded(event:GameEvent):void {
         trace("Game loaded");
+        game.removeEventListener(GameEvent.GAME_LOADED, onGameLoaded);
         var gameManagerLoaded:GameManagerEvent = new GameManagerEvent(GameManagerEvent.GAMEMANAGER_LOADED);
         stage.addChild(game);
         game.initLevel();

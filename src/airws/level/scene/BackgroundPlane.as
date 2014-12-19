@@ -6,6 +6,7 @@ import starling.animation.Tween;
 import starling.core.Starling;
 import starling.display.Image;
 import starling.display.Sprite;
+import starling.filters.ColorMatrixFilter;
 import starling.textures.Texture;
 
 public class BackgroundPlane extends Sprite {
@@ -33,12 +34,10 @@ public class BackgroundPlane extends Sprite {
         image2 = new Image(texture);
         tween = new Tween(this, time);
         tween.repeatCount = 0;
-        tween.onComplete = function(): void {
-            trace("tween complete!");
-        };
+        //tween.onRepeat = onTweenRepeat;
     }
 
-    private function onTweenComplete(): void {
+    private function onTweenRepeat(): void {
         trace('tween complete');
     }
 
@@ -59,13 +58,18 @@ public class BackgroundPlane extends Sprite {
                 break;
         }
 
-        image2.x = image1.width - 1;
+        image2.x = image1.width - 2;
 
         addChild(image1);
         addChild(image2);
 
         tween.animate("x", -textureWidth);
         Starling.juggler.add(tween);
+    }
+
+    public function setTint(color:uint):void {
+        image1.color = color;
+        image2.color = color;
     }
 }
 }

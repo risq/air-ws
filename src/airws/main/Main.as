@@ -5,6 +5,7 @@ import airws.main.AppManager;
 import flash.display.Sprite;
 import flash.display.StageAlign;
 import flash.display.StageScaleMode;
+import flash.display3D.Context3DProfile;
 import flash.geom.Rectangle;
 
 import starling.core.Starling;
@@ -31,10 +32,11 @@ public class Main extends Sprite
         // Create a Starling instance that will run the "App" class
 
         var viewport:Rectangle = new Rectangle(0, 0, stage.fullScreenWidth, stage.fullScreenHeight);
-        _starling = new Starling(AppManager, stage, viewport);
+        _starling = new Starling(AppManager, stage, viewport, null, "auto", Context3DProfile.BASELINE_EXTENDED);
         _starling.stage.stageWidth = 1280;
         _starling.stage.stageHeight = stage.fullScreenHeight / stage.fullScreenWidth * 1280;
-        _starling.stage.color = 0xdfeeff;
+        _starling.stage.color = 0xffffff;
+        _starling.showStats = true;
         _starling.addEventListener(Event.ROOT_CREATED, _onRootCreated);
         _starling.start();
     }

@@ -1,8 +1,12 @@
 /**
  * Created by valpc on 18/12/2014.
  */
-package airws.level.Level {
+package airws.level.level {
 import airws.level.scene.BackgroundPlane;
+import airws.level.scene.Scene;
+import airws.player.Player;
+
+import flash.geom.Point;
 
 import starling.display.Image;
 import starling.display.Quad;
@@ -12,32 +16,20 @@ import starling.utils.AssetManager;
 
 public class Level extends Sprite {
 
-    private var mountain1:BackgroundPlane;
-    private var clouds1:BackgroundPlane;
-    private var clouds2:BackgroundPlane;
-    private var ground:BackgroundPlane;
-    private var mountain2:BackgroundPlane;
+    public var scene:Scene;
 
-    public function Level(assetManager: AssetManager) {
-        clouds1 = new BackgroundPlane(assetManager.getTexture("clouds1"), 15, BackgroundPlane.TOP_ALIGNED_PLANE);
-        clouds2 = new BackgroundPlane(assetManager.getTexture("clouds2"), 20, BackgroundPlane.TOP_ALIGNED_PLANE);
-        ground = new BackgroundPlane(assetManager.getTexture("ground"), 3, BackgroundPlane.BOTTOM_ALIGNED_PLANE);
-        mountain1 = new BackgroundPlane(assetManager.getTexture("mountain1"), 20, BackgroundPlane.FULL_HEIGHT_PLANE);
-        mountain2 = new BackgroundPlane(assetManager.getTexture("mountain2"), 40, BackgroundPlane.FULL_HEIGHT_PLANE);
+    public function Level() {
+        scene = new Scene();
+        addChild(scene);
     }
 
+    public function init() {
+        scene.init();
+    }
 
-    public function init():void {
-        addChild(mountain2);
-        addChild(mountain1);
-        addChild(clouds1);
-        addChild(clouds2);
-        addChild(ground);
-        mountain1.init();
-        clouds1.init();
-        clouds2.init();
-        ground.init();
-        mountain2.init();
+    public function addPlayerToScene(player:Player):void {
+        scene.playerPlane.addChild(player);
+        player.init();
     }
 }
 }
