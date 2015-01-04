@@ -16,7 +16,7 @@ public class LevelLoader extends EventDispatcher{
     }
 
     public function loadLevel(levelID: uint): void {
-        var level:Level = new Level();
+        var level:Level = new Level("level" + levelID);
 
         var levelLoadedEvent = new LevelLoaderEvent(LevelLoaderEvent.LEVEL_LOADED);
         levelLoadedEvent.level = level;

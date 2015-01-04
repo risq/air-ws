@@ -11,7 +11,7 @@ import starling.display.MovieClip;
 import starling.display.Sprite;
 import starling.utils.AssetManager;
 
-public class Player extends Sprite implements IAnimatable {
+public class Player extends Sprite {
 
     private var playerMovieClip:MovieClip;
     private var playerBaseY:Number;
@@ -23,7 +23,9 @@ public class Player extends Sprite implements IAnimatable {
     private var isJumping:Boolean= false;
 
     public function Player() {
-        playerMovieClip = new MovieClip(Constant.assetManager.getTextures("bonhomme"), 12);
+        playerMovieClip = new MovieClip(Constant.assetManager.getTextureAtlas("normalPersoCourt").getTextures(), 30);
+        Starling.juggler.add(playerMovieClip);
+        playerMovieClip.play();
     }
 
     public function init() {
@@ -48,7 +50,7 @@ public class Player extends Sprite implements IAnimatable {
         return !isJumping || (playerBaseY - playerMovieClip.y < 50);
     }
 
-    public function advanceTime(time:Number):void {
+    public function updatePosition(time:Number):void {
         if (isJumping) {
             playerMovieClip.y -= velY * time;
             velY -= (velY * friction - gravity) * time * 60;

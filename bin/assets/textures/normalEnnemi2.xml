@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="normalEnnemi2.png">
+	<!-- Created with Adobe Flash Professional version 14.0.0.110 -->
+	<!-- http://www.adobe.com/products/flash.html -->
+	<SubTexture name="Occurrence solRacines 10000" x="0" y="0" width="83" height="80" pivotX="2.55" pivotY="1.55" frameX="-3" frameY="-1" frameWidth="86" frameHeight="81"/>
+	<SubTexture name="Occurrence solRacines 10001" x="0" y="0" width="83" height="80" frameX="-3" frameY="-1" frameWidth="86" frameHeight="81"/>
+	<SubTexture name="Occurrence solRacines 10002" x="0" y="0" width="83" height="80" frameX="-3" frameY="-1" frameWidth="86" frameHeight="81"/>
+	<SubTexture name="Occurrence solRacines 10003" x="0" y="0" width="83" height="80" frameX="-3" frameY="-1" frameWidth="86" frameHeight="81"/>
+	<SubTexture name="Occurrence solRacines 10004" x="0" y="0" width="83" height="80" frameX="-3" frameY="-1" frameWidth="86" frameHeight="81"/>
+	<SubTexture name="Occurrence solRacines 10005" x="0" y="0" width="83" height="80" frameX="-3" frameY="-1" frameWidth="86" frameHeight="81"/>
+	<SubTexture name="Occurrence solRacines 10006" x="0" y="80" width="85" height="68" frameX="0" frameY="-13" frameWidth="86" frameHeight="81"/>
+	<SubTexture name="Occurrence solRacines 10007" x="0" y="80" width="85" height="68" frameX="0" frameY="-13" frameWidth="86" frameHeight="81"/>
+	<SubTexture name="Occurrence solRacines 10008" x="0" y="80" width="85" height="68" frameX="0" frameY="-13" frameWidth="86" frameHeight="81"/>
+	<SubTexture name="Occurrence solRacines 10009" x="0" y="80" width="85" height="68" frameX="0" frameY="-13" frameWidth="86" frameHeight="81"/>
+	<SubTexture name="Occurrence solRacines 10010" x="0" y="80" width="85" height="68" frameX="0" frameY="-13" frameWidth="86" frameHeight="81"/>
+	<SubTexture name="Occurrence solRacines 10011" x="0" y="80" width="85" height="68" frameX="0" frameY="-13" frameWidth="86" frameHeight="81"/>
+	<SubTexture name="Occurrence solRacines 10012" x="0" y="148" width="84" height="81" frameX="-1" frameY="0" frameWidth="86" frameHeight="81"/>
+	<SubTexture name="Occurrence solRacines 10013" x="0" y="148" width="84" height="81" frameX="-1" frameY="0" frameWidth="86" frameHeight="81"/>
+	<SubTexture name="Occurrence solRacines 10014" x="0" y="148" width="84" height="81" frameX="-1" frameY="0" frameWidth="86" frameHeight="81"/>
+	<SubTexture name="Occurrence solRacines 10015" x="0" y="148" width="84" height="81" frameX="-1" frameY="0" frameWidth="86" frameHeight="81"/>
+	<SubTexture name="Occurrence solRacines 10016" x="0" y="148" width="84" height="81" frameX="-1" frameY="0" frameWidth="86" frameHeight="81"/>
+	<SubTexture name="Occurrence solRacines 10017" x="0" y="148" width="84" height="81" frameX="-1" frameY="0" frameWidth="86" frameHeight="81"/>
+	<SubTexture name="Occurrence solRacines 10018" x="0" y="80" width="85" height="68" frameX="0" frameY="-13" frameWidth="86" frameHeight="81"/>
+	<SubTexture name="Occurrence solRacines 10019" x="0" y="80" width="85" height="68" frameX="0" frameY="-13" frameWidth="86" frameHeight="81"/>
+	<SubTexture name="Occurrence solRacines 10020" x="0" y="80" width="85" height="68" frameX="0" frameY="-13" frameWidth="86" frameHeight="81"/>
+	<SubTexture name="Occurrence solRacines 10021" x="0" y="80" width="85" height="68" frameX="0" frameY="-13" frameWidth="86" frameHeight="81"/>
+	<SubTexture name="Occurrence solRacines 10022" x="0" y="80" width="85" height="68" frameX="0" frameY="-13" frameWidth="86" frameHeight="81"/>
+	<SubTexture name="Occurrence solRacines 10023" x="0" y="80" width="85" height="68" frameX="0" frameY="-13" frameWidth="86" frameHeight="81"/>
+</TextureAtlas>

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="pieces.png">
+	<!-- Created with Adobe Flash Professional version 14.0.0.110 -->
+	<!-- http://www.adobe.com/products/flash.html -->
+	<SubTexture name="Occurrence lum 10000" x="0" y="0" width="27" height="28" pivotX="8.45" pivotY="0.8" frameX="-11" frameY="-11" frameWidth="49" frameHeight="50"/>
+	<SubTexture name="Occurrence lum 10001" x="0" y="0" width="27" height="28" frameX="-11" frameY="-11" frameWidth="49" frameHeight="50"/>
+	<SubTexture name="Occurrence lum 10002" x="0" y="0" width="27" height="28" frameX="-11" frameY="-11" frameWidth="49" frameHeight="50"/>
+	<SubTexture name="Occurrence lum 10003" x="0" y="0" width="27" height="28" frameX="-11" frameY="-11" frameWidth="49" frameHeight="50"/>
+	<SubTexture name="Occurrence lum 10004" x="27" y="0" width="37" height="38" frameX="-6" frameY="-6" frameWidth="49" frameHeight="50"/>
+	<SubTexture name="Occurrence lum 10005" x="27" y="0" width="37" height="38" frameX="-6" frameY="-6" frameWidth="49" frameHeight="50"/>
+	<SubTexture name="Occurrence lum 10006" x="27" y="0" width="37" height="38" frameX="-6" frameY="-6" frameWidth="49" frameHeight="50"/>
+	<SubTexture name="Occurrence lum 10007" x="27" y="0" width="37" height="38" frameX="-6" frameY="-6" frameWidth="49" frameHeight="50"/>
+	<SubTexture name="Occurrence lum 10008" x="64" y="0" width="41" height="42" frameX="-4" frameY="-4" frameWidth="49" frameHeight="50"/>
+	<SubTexture name="Occurrence lum 10009" x="64" y="0" width="41" height="42" frameX="-4" frameY="-4" frameWidth="49" frameHeight="50"/>
+	<SubTexture name="Occurrence lum 10010" x="64" y="0" width="41" height="42" frameX="-4" frameY="-4" frameWidth="49" frameHeight="50"/>
+	<SubTexture name="Occurrence lum 10011" x="64" y="0" width="41" height="42" frameX="-4" frameY="-4" frameWidth="49" frameHeight="50"/>
+	<SubTexture name="Occurrence lum 10012" x="105" y="0" width="49" height="50"/>
+	<SubTexture name="Occurrence lum 10013" x="105" y="0" width="49" height="50"/>
+	<SubTexture name="Occurrence lum 10014" x="105" y="0" width="49" height="50"/>
+	<SubTexture name="Occurrence lum 10015" x="105" y="0" width="49" height="50"/>
+	<SubTexture name="Occurrence lum 10016" x="64" y="0" width="41" height="42" frameX="-4" frameY="-4" frameWidth="49" frameHeight="50"/>
+	<SubTexture name="Occurrence lum 10017" x="64" y="0" width="41" height="42" frameX="-4" frameY="-4" frameWidth="49" frameHeight="50"/>
+	<SubTexture name="Occurrence lum 10018" x="64" y="0" width="41" height="42" frameX="-4" frameY="-4" frameWidth="49" frameHeight="50"/>
+	<SubTexture name="Occurrence lum 10019" x="64" y="0" width="41" height="42" frameX="-4" frameY="-4" frameWidth="49" frameHeight="50"/>
+	<SubTexture name="Occurrence lum 10020" x="64" y="0" width="41" height="42" frameX="-4" frameY="-4" frameWidth="49" frameHeight="50"/>
+	<SubTexture name="Occurrence lum 10021" x="64" y="0" width="41" height="42" frameX="-4" frameY="-4" frameWidth="49" frameHeight="50"/>
+	<SubTexture name="Occurrence lum 10022" x="64" y="0" width="41" height="42" frameX="-4" frameY="-4" frameWidth="49" frameHeight="50"/>
+	<SubTexture name="Occurrence lum 10023" x="64" y="0" width="41" height="42" frameX="-4" frameY="-4" frameWidth="49" frameHeight="50"/>
+	<SubTexture name="Occurrence lum 10024" x="27" y="0" width="37" height="38" frameX="-6" frameY="-6" frameWidth="49" frameHeight="50"/>
+	<SubTexture name="Occurrence lum 10025" x="27" y="0" width="37" height="38" frameX="-6" frameY="-6" frameWidth="49" frameHeight="50"/>
+	<SubTexture name="Occurrence lum 10026" x="27" y="0" width="37" height="38" frameX="-6" frameY="-6" frameWidth="49" frameHeight="50"/>
+	<SubTexture name="Occurrence lum 10027" x="27" y="0" width="37" height="38" frameX="-6" frameY="-6" frameWidth="49" frameHeight="50"/>
+	<SubTexture name="Occurrence lum 10028" x="27" y="0" width="37" height="38" frameX="-6" frameY="-6" frameWidth="49" frameHeight="50"/>
+	<SubTexture name="Occurrence lum 10029" x="27" y="0" width="37" height="38" frameX="-6" frameY="-6" frameWidth="49" frameHeight="50"/>
+	<SubTexture name="Occurrence lum 10030" x="27" y="0" width="37" height="38" frameX="-6" frameY="-6" frameWidth="49" frameHeight="50"/>
+	<SubTexture name="Occurrence lum 10031" x="27" y="0" width="37" height="38" frameX="-6" frameY="-6" frameWidth="49" frameHeight="50"/>
+</TextureAtlas>

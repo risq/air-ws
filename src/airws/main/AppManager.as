@@ -6,6 +6,7 @@ import airws.Constant;
 import airws.game.gameManager.GameManager;
 import airws.game.gameManager.GameManagerEvent;
 import airws.main.*;
+import airws.ui.UIManager;
 
 import flash.filesystem.File;
 
@@ -20,7 +21,6 @@ public class AppManager extends Sprite
 {
 
     private var gameManager:GameManager;
-    //var car:Car;
 
     public function AppManager() {
         super();
@@ -46,6 +46,7 @@ public class AppManager extends Sprite
     private function onAssetsLoaded():void {
         trace("assetManager loaded");
         Splash.hide();
+
         initGameManager();
     }
 

@@ -38,7 +38,6 @@ public class BackgroundPlane extends Sprite {
     }
 
     private function onTweenRepeat(): void {
-        trace('tween complete');
     }
 
     public function init() {

@@ -32,10 +32,10 @@ public class Scene extends Sprite {
     public function Scene() {
         //clouds1   = new BackgroundPlane(Constant.assetManager.getTexture("clouds1"), 15, BackgroundPlane.TOP_ALIGNED_PLANE);
         //clouds2   = new BackgroundPlane(Constant.assetManager.getTexture("clouds2"), 20, BackgroundPlane.TOP_ALIGNED_PLANE);
-        ground    = new BackgroundPlane(Constant.assetManager.getTexture("ground"), 3, BackgroundPlane.BOTTOM_ALIGNED_PLANE);
-        mountain1 = new BackgroundPlane(Constant.assetManager.getTexture("mountain1"), 40, BackgroundPlane.BOTTOM_ALIGNED_PLANE);
-        collines1 = new BackgroundPlane(Constant.assetManager.getTexture("collines1"), 25, BackgroundPlane.BOTTOM_ALIGNED_PLANE);
-        collines2 = new BackgroundPlane(Constant.assetManager.getTexture("collines2"), 30, BackgroundPlane.BOTTOM_ALIGNED_PLANE);
+        ground    = new BackgroundPlane(Constant.assetManager.getTexture("normalSol"),     3, BackgroundPlane.BOTTOM_ALIGNED_PLANE);
+        mountain1 = new BackgroundPlane(Constant.assetManager.getTexture("normalPlan3"), 40, BackgroundPlane.BOTTOM_ALIGNED_PLANE);
+        collines1 = new BackgroundPlane(Constant.assetManager.getTexture("normalPlan1"), 25, BackgroundPlane.BOTTOM_ALIGNED_PLANE);
+//        collines2 = new BackgroundPlane(Constant.assetManager.getTexture("normalPlan1"), 30, BackgroundPlane.BOTTOM_ALIGNED_PLANE);
         //mountain2 = new BackgroundPlane(Constant.assetManager.getTexture("mountain2"), 40, BackgroundPlane.FULL_HEIGHT_PLANE);
 
         playerPlane = new Sprite();
@@ -43,11 +43,11 @@ public class Scene extends Sprite {
     }
 
     public function init():void {
-//        initBackgroundPane(mountain1);
+        initBackgroundPane(mountain1);
 //        initBackgroundPane(collines2);
         initBackgroundPane(collines1);
         addChild(playerPlane);
-//        initBackgroundPane(ground);
+        initBackgroundPane(ground);
 
 //        var tween:Tween = new Tween(this, 5);
 //        tween.animate("tintColor", 0xff0000);
@@ -73,7 +73,7 @@ public class Scene extends Sprite {
         setTint(ground, color);
         setTint(mountain1, color);
         setTint(collines1, color);
-        setTint(collines2, color);
+//        setTint(collines2, color);
     }
 }
 }
