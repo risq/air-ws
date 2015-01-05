@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="lentPerso.png">
+	<!-- Created with Adobe Flash Professional version 14.0.0.110 -->
+	<!-- http://www.adobe.com/products/flash.html -->
+	<SubTexture name="Occurrence lentPersoCourt 10000" x="0" y="0" width="54" height="158" pivotX="-6.15" pivotY="-3.3" frameX="-52" frameY="-12" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="Occurrence lentPersoCourt 10001" x="54" y="0" width="58" height="151" frameX="-46" frameY="-19" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="Occurrence lentPersoCourt 10002" x="112" y="0" width="55" height="159" frameX="-52" frameY="-11" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="Occurrence lentPersoCourt 10003" x="167" y="0" width="95" height="150" frameX="-23" frameY="-6" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="Occurrence lentPersoCourt 10004" x="167" y="0" width="95" height="150" frameX="-22" frameY="-1" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="Occurrence lentPersoCourt 10005" x="262" y="0" width="118" height="143" frameX="-10" frameY="0" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="Occurrence lentPersoCourt 10006" x="380" y="0" width="118" height="143" frameX="-9" frameY="-1" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="Occurrence lentPersoCourt 10007" x="380" y="0" width="118" height="143" frameX="-9" frameY="-2" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="Occurrence lentPersoCourt 10008" x="380" y="0" width="118" height="143" frameX="-8" frameY="-3" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="Occurrence lentPersoCourt 10009" x="380" y="0" width="118" height="143" frameX="-8" frameY="-3" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="Occurrence lentPersoCourt 10010" x="380" y="0" width="118" height="143" frameX="-8" frameY="-4" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="Occurrence lentPersoCourt 10011" x="0" y="159" width="125" height="155" frameX="-4" frameY="-9" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="Occurrence lentPersoCourt 10012" x="0" y="159" width="125" height="155" frameX="-3" frameY="-11" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="Occurrence lentPersoCourt 10013" x="0" y="159" width="125" height="155" frameX="-3" frameY="-13" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="Occurrence lentPersoCourt 10014" x="0" y="159" width="125" height="155" frameX="-2" frameY="-15" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="Occurrence lentPersoCourt 10015" x="0" y="159" width="125" height="155" frameX="-1" frameY="-17" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="Occurrence lentPersoCourt 10016" x="125" y="159" width="125" height="155" frameX="-1" frameY="-19" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="Occurrence lentPersoCourt 10017" x="125" y="159" width="125" height="155" frameX="0" frameY="-21" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="Occurrence lentPersoCourt 10018" x="250" y="159" width="91" height="156" frameX="-16" frameY="-13" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="Occurrence lentPersoCourt 10019" x="250" y="159" width="91" height="156" frameX="-22" frameY="-13" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="Occurrence lentPersoCourt 10020" x="250" y="159" width="91" height="156" frameX="-28" frameY="-13" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="Occurrence lentPersoCourt 10021" x="341" y="159" width="54" height="158" frameX="-52" frameY="-12" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="Occurrence lentPersoCourt 10022" x="341" y="159" width="54" height="158" frameX="-52" frameY="-12" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="Occurrence lentPersoCourt 10023" x="341" y="159" width="54" height="158" frameX="-52" frameY="-12" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="Occurrence lentPersoCourt 10024" x="341" y="159" width="54" height="158" frameX="-52" frameY="-12" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="Occurrence lentPersoCourt 10025" x="341" y="159" width="54" height="158" frameX="-52" frameY="-12" frameWidth="140" frameHeight="176"/>
+	<SubTexture name="Occurrence lentPersoCourt 10026" x="395" y="159" width="134" height="132" frameX="-6" frameY="-1" frameWidth="140" frameHeight="176"/>
+</TextureAtlas>

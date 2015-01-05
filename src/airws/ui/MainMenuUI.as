@@ -2,7 +2,7 @@
  * Created by vledrapier on 18/12/2014.
  */
 package airws.ui {
-import airws.Constant;
+import airws.Static;
 import airws.level.scene.BackgroundPlane;
 
 
@@ -25,11 +25,11 @@ public class MainMenuUI extends Sprite {
         buttonsContainer = new Sprite();
         addChild(buttonsContainer);
 
-        startButton = new Button(Constant.assetManager.getTexture("button"), "Start");
+        startButton = new Button(Static.assetManager.getTexture("button"), "Start");
         startButton.addEventListener(Event.TRIGGERED, onButtonStartTriggered);
         buttonsContainer.addChild(startButton);
 
-        highScoresButton = new Button(Constant.assetManager.getTexture("button"), "High Scores");
+        highScoresButton = new Button(Static.assetManager.getTexture("button"), "High Scores");
         highScoresButton.addEventListener(Event.TRIGGERED, onButtonStartTriggered);
         highScoresButton.y = 100;
         buttonsContainer.addChild(highScoresButton);

@@ -2,6 +2,8 @@
  * Created by vledrapier on 18/12/2014.
  */
 package airws.game.game {
+import airws.Static;
+import airws.game.gameState.GameStateNormal;
 import airws.level.level.Level;
 import airws.level.level.LevelEvent;
 import airws.level.levelLoader.LevelLoader;
@@ -21,8 +23,8 @@ import starling.events.TouchPhase;
 
 public class Game extends Sprite implements IAnimatable {
 
-    private var level:Level;
-    private var player:Player;
+    public var level:Level;
+    public var player:Player;
     private var started:Boolean = false;
     private var levelLoader:LevelLoader;
 
@@ -38,8 +40,6 @@ public class Game extends Sprite implements IAnimatable {
     public function loadLevel(levelID:uint = 1): void {
         levelLoader.loadLevel(levelID);
     }
-
-
 
     public function start(): void {
         if (!isStarted()) {
@@ -76,15 +76,17 @@ public class Game extends Sprite implements IAnimatable {
     }
 
     private function onPlayerTouchEnemy(event:LevelEvent):void {
-
+        var gameLosed:GameEvent = new GameEvent(GameEvent.GAME_LOOSED);
+        dispatchEvent(gameLosed);
     }
 
     private function onPlayerTouchBonus(event:LevelEvent):void {
-
+        var gameGetBonus:GameEvent = new GameEvent(GameEvent.GAME_GET_BONUS);
+        dispatchEvent(gameGetBonus);
     }
 
     private function onPlayerTouchCoin(event:LevelEvent):void {
-        trace("player touched coin");
+
     }
 
     public function initLevel():void {
@@ -97,7 +99,7 @@ public class Game extends Sprite implements IAnimatable {
         if (started) {
             var touch:Touch = event.getTouch(stage, TouchPhase.BEGAN);
             if (touch) {
-                var localPos:Point = touch.getLocation(stage);
+//                var localPos:Point = touch.getLocation(stage);
                 player.jump();
             }
         }
@@ -109,5 +111,6 @@ public class Game extends Sprite implements IAnimatable {
             level.updatePosition(time, player.getBounds(level));
         }
     }
+
 }
 }

@@ -2,7 +2,7 @@
  * Created by vledrapier on 19/12/2014.
  */
 package airws.player {
-import airws.Constant;
+import airws.Static;
 
 import starling.animation.IAnimatable;
 import starling.animation.Tween;
@@ -17,15 +17,13 @@ public class Player extends Sprite {
     private var playerBaseY:Number;
     private var velY: Number = 0;
 
-    private var jumpSpeed:uint = 3500;
     private var friction:Number = 0.05;
-    private var gravity:Number = -90;
     private var isJumping:Boolean= false;
 
     public function Player() {
-        playerMovieClip = new MovieClip(Constant.assetManager.getTextureAtlas("normalPersoCourt").getTextures(), 30);
-        Starling.juggler.add(playerMovieClip);
-        playerMovieClip.play();
+//        playerMovieClip = new MovieClip(Static.assetManager.getTextureAtlas("normalPerso").getTextures(), 30);
+        setPlayerSprite(Static.currentGameState.getPlayerSprite());
+
     }
 
     public function init() {
@@ -38,7 +36,8 @@ public class Player extends Sprite {
     public function jump():void {
         if (canJump()){
             isJumping = true;
-            velY = jumpSpeed;
+            velY = Static.currentGameState.getJumpForce();
+            playerMovieClip.setFrameDuration(playerMovieClip.numFrames - 1, 999);
         }
     }
 
@@ -53,13 +52,27 @@ public class Player extends Sprite {
     public function updatePosition(time:Number):void {
         if (isJumping) {
             playerMovieClip.y -= velY * time;
-            velY -= (velY * friction - gravity) * time * 60;
+            velY -= (velY * friction + Static.currentGameState.getGravityForce()) * time * 60;
 
             if (playerMovieClip.y > playerBaseY) {
                 playerMovieClip.y = playerBaseY;
                 isJumping = false; // TODO: double jump ?
             }
         }
+        else {
+            playerMovieClip.setFrameDuration(playerMovieClip.numFrames - 1, 0);
+        }
+    }
+
+    public function setPlayerSprite(filename:String):void {
+        trace("Setting player sprite to", filename);
+        removeChild(playerMovieClip);
+        playerMovieClip = new MovieClip(Static.assetManager.getTextureAtlas(filename).getTextures(), 50);
+        playerMovieClip.y = playerBaseY;
+        playerMovieClip.x = 200;
+        Starling.juggler.add(playerMovieClip);
+        playerMovieClip.play();
+        addChild(playerMovieClip);
     }
 }
 }

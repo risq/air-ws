@@ -2,7 +2,7 @@
  * Created by vledrapier on 18/12/2014.
  */
 package airws.ui {
-import airws.Constant;
+import airws.Static;
 import airws.level.scene.BackgroundPlane;
 
 import starling.core.Starling;
@@ -32,16 +32,16 @@ public class InGameUI extends Sprite {
         addChild(buttonsContainer);
 
 
-        pauseButton = new Button(Constant.assetManager.getTexture("button"), "Pause");
+        pauseButton = new Button(Static.assetManager.getTexture("button"), "Pause");
         pauseButton.addEventListener(Event.TRIGGERED, onButtonPauseTriggered);
         buttonsContainer.addChild(pauseButton);
 
-        resetButton = new Button(Constant.assetManager.getTexture("button"), "Reset");
+        resetButton = new Button(Static.assetManager.getTexture("button"), "Reset");
         resetButton.addEventListener(Event.TRIGGERED, onButtonResetTriggered);
         resetButton.x = 400;
         buttonsContainer.addChild(resetButton);
 
-        quitButton = new Button(Constant.assetManager.getTexture("button"), "Quit");
+        quitButton = new Button(Static.assetManager.getTexture("button"), "Quit");
         quitButton.addEventListener(Event.TRIGGERED, onButtonQuitTriggered);
         quitButton.x = 800;
         buttonsContainer.addChild(quitButton);

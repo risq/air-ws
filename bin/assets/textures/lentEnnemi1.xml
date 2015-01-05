@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="lentEnnemi1.png">
+	<!-- Created with Adobe Flash Professional version 14.0.0.110 -->
+	<!-- http://www.adobe.com/products/flash.html -->
+	<SubTexture name="Occurrence poisson 10000" x="0" y="0" width="111" height="80" pivotX="0" pivotY="1" frameX="0" frameY="-1" frameWidth="111" frameHeight="82"/>
+	<SubTexture name="Occurrence poisson 10001" x="0" y="0" width="111" height="80" frameX="0" frameY="-1" frameWidth="111" frameHeight="82"/>
+	<SubTexture name="Occurrence poisson 10002" x="0" y="0" width="111" height="80" frameX="0" frameY="-1" frameWidth="111" frameHeight="82"/>
+	<SubTexture name="Occurrence poisson 10003" x="0" y="0" width="111" height="80" frameX="0" frameY="-1" frameWidth="111" frameHeight="82"/>
+	<SubTexture name="Occurrence poisson 10004" x="0" y="80" width="108" height="80" frameX="0" frameY="-2" frameWidth="111" frameHeight="82"/>
+	<SubTexture name="Occurrence poisson 10005" x="0" y="80" width="108" height="80" frameX="0" frameY="-2" frameWidth="111" frameHeight="82"/>
+	<SubTexture name="Occurrence poisson 10006" x="0" y="80" width="108" height="80" frameX="0" frameY="-2" frameWidth="111" frameHeight="82"/>
+	<SubTexture name="Occurrence poisson 10007" x="0" y="80" width="108" height="80" frameX="0" frameY="-2" frameWidth="111" frameHeight="82"/>
+	<SubTexture name="Occurrence poisson 10008" x="0" y="160" width="107" height="80" frameX="0" frameY="0" frameWidth="111" frameHeight="82"/>
+	<SubTexture name="Occurrence poisson 10009" x="0" y="160" width="107" height="80" frameX="0" frameY="0" frameWidth="111" frameHeight="82"/>
+	<SubTexture name="Occurrence poisson 10010" x="0" y="160" width="107" height="80" frameX="0" frameY="0" frameWidth="111" frameHeight="82"/>
+	<SubTexture name="Occurrence poisson 10011" x="0" y="160" width="107" height="80" frameX="0" frameY="0" frameWidth="111" frameHeight="82"/>
+	<SubTexture name="Occurrence poisson 10012" x="0" y="80" width="108" height="80" frameX="0" frameY="0" frameWidth="111" frameHeight="82"/>
+	<SubTexture name="Occurrence poisson 10013" x="0" y="80" width="108" height="80" frameX="0" frameY="0" frameWidth="111" frameHeight="82"/>
+	<SubTexture name="Occurrence poisson 10014" x="0" y="80" width="108" height="80" frameX="0" frameY="0" frameWidth="111" frameHeight="82"/>
+	<SubTexture name="Occurrence poisson 10015" x="0" y="80" width="108" height="80" frameX="0" frameY="0" frameWidth="111" frameHeight="82"/>
+</TextureAtlas>

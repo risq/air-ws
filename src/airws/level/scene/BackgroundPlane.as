@@ -70,5 +70,10 @@ public class BackgroundPlane extends Sprite {
         image1.color = color;
         image2.color = color;
     }
+
+    public function setTexture(texture:Texture) {
+        image1.texture = texture;
+        image2.texture = texture;
+    }
 }
 }

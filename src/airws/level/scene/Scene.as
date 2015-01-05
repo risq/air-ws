@@ -2,52 +2,68 @@
  * Created by valpc on 18/12/2014.
  */
 package airws.level.scene {
-import airws.Constant;
+import airws.Static;
 
-import flash.display.DisplayObjectContainer;
-
-import starling.animation.Tween;
-import starling.core.Starling;
-
-import starling.display.DisplayObject;
+import starling.display.Image;
+import starling.display.Quad;
 import starling.display.Sprite;
-import starling.filters.ColorMatrixFilter;
-import starling.utils.AssetManager;
-import starling.utils.Color;
 
 public class Scene extends Sprite {
 
-    private var mountain1:BackgroundPlane;
-    private var clouds1:BackgroundPlane;
-    private var clouds2:BackgroundPlane;
+    private var plan1:BackgroundPlane;
+    private var plan2:BackgroundPlane;
+    private var plan3:BackgroundPlane;
     private var ground:BackgroundPlane;
+    private var ceiling:BackgroundPlane;
     private var mountain2:BackgroundPlane;
-    private var collines1:BackgroundPlane;
-    private var collines2:BackgroundPlane;
+    private var fx:BackgroundPlane;
+
 
     public var playerPlane:Sprite;
+    public var mapPlane:Sprite;
+
+    private var mask:Image;
+    private var bg:Quad;
 
     private var _tintColor:uint;
 
     public function Scene() {
         //clouds1   = new BackgroundPlane(Constant.assetManager.getTexture("clouds1"), 15, BackgroundPlane.TOP_ALIGNED_PLANE);
         //clouds2   = new BackgroundPlane(Constant.assetManager.getTexture("clouds2"), 20, BackgroundPlane.TOP_ALIGNED_PLANE);
-        ground    = new BackgroundPlane(Constant.assetManager.getTexture("normalSol"),     3, BackgroundPlane.BOTTOM_ALIGNED_PLANE);
-        mountain1 = new BackgroundPlane(Constant.assetManager.getTexture("normalPlan3"), 40, BackgroundPlane.BOTTOM_ALIGNED_PLANE);
-        collines1 = new BackgroundPlane(Constant.assetManager.getTexture("normalPlan1"), 25, BackgroundPlane.BOTTOM_ALIGNED_PLANE);
-//        collines2 = new BackgroundPlane(Constant.assetManager.getTexture("normalPlan1"), 30, BackgroundPlane.BOTTOM_ALIGNED_PLANE);
+        ground    = new BackgroundPlane(Static.assetManager.getTexture("normalSol"),     5, BackgroundPlane.BOTTOM_ALIGNED_PLANE);
+        ceiling   = new BackgroundPlane(Static.assetManager.getTexture("lentPlafond"),     5, BackgroundPlane.TOP_ALIGNED_PLANE);
+        plan3     = new BackgroundPlane(Static.assetManager.getTexture("normalPlan3"), 40, BackgroundPlane.BOTTOM_ALIGNED_PLANE);
+        plan2     = new BackgroundPlane(Static.assetManager.getTexture("normalPlan2"), 45, BackgroundPlane.TOP_ALIGNED_PLANE);
+        plan1     = new BackgroundPlane(Static.assetManager.getTexture("normalPlan1"), 25, BackgroundPlane.BOTTOM_ALIGNED_PLANE);
+        fx        = new BackgroundPlane(Static.assetManager.getTexture("fx"), 20, BackgroundPlane.BOTTOM_ALIGNED_PLANE);
         //mountain2 = new BackgroundPlane(Constant.assetManager.getTexture("mountain2"), 40, BackgroundPlane.FULL_HEIGHT_PLANE);
 
+
+        bg = new Quad(1280, 768);
+
+        mask = new Image(Static.assetManager.getTexture("mask"));
+
+        mapPlane = new Sprite();
         playerPlane = new Sprite();
 
     }
 
     public function init():void {
-        initBackgroundPane(mountain1);
-//        initBackgroundPane(collines2);
-        initBackgroundPane(collines1);
+
+        addChild(bg);
+
+        initBackgroundPane(plan3);
+        initBackgroundPane(plan2);
+        initBackgroundPane(plan1);
+        initBackgroundPane(fx);
+
+        addChild(mapPlane);
         addChild(playerPlane);
+
         initBackgroundPane(ground);
+        initBackgroundPane(ceiling);
+
+        addChild(mask);
 
 //        var tween:Tween = new Tween(this, 5);
 //        tween.animate("tintColor", 0xff0000);
@@ -64,16 +80,24 @@ public class Scene extends Sprite {
         backgroundPane.setTint(color);
     }
 
-    public function get tintColor():uint {
-        return _tintColor;
-    }
-
-    public function set tintColor(color:uint):void {
+    public function setTintColor(color:uint):void {
         _tintColor = color;
         setTint(ground, color);
-        setTint(mountain1, color);
-        setTint(collines1, color);
-//        setTint(collines2, color);
+        setTint(plan1, color);
+        setTint(plan2, color);
+        setTint(plan3, color);
+    }
+
+    public function setBgColor(color:uint):void {
+        bg.color = color;
+    }
+
+    public function setPlanesTextures(plane1SpriteName:String, plane2SpriteName:String, plane3SpriteName:String, groundSpriteName:String, ceilingSpriteName:String):void {
+        plan1.setTexture(Static.assetManager.getTexture(plane1SpriteName));
+        plan2.setTexture(Static.assetManager.getTexture(plane2SpriteName));
+        plan3.setTexture(Static.assetManager.getTexture(plane3SpriteName));
+        ground.setTexture(Static.assetManager.getTexture(groundSpriteName));
+        ceiling.setTexture(Static.assetManager.getTexture(ceilingSpriteName));
     }
 }
 }

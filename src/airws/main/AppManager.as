@@ -2,7 +2,7 @@
  * Created by vledrapier on 15/12/2014.
  */
 package airws.main {
-import airws.Constant;
+import airws.Static;
 import airws.game.gameManager.GameManager;
 import airws.game.gameManager.GameManagerEvent;
 import airws.main.*;
@@ -31,11 +31,11 @@ public class AppManager extends Sprite
     }
 
     private function loadAssets() {
-        Constant.initAssetManager();
+        Static.initAssetManager();
         var appDir:File = File.applicationDirectory;
-        Constant.assetManager.enqueue(appDir.resolvePath("assets/"));
+        Static.assetManager.enqueue(appDir.resolvePath("assets/"));
 
-        Constant.assetManager.loadQueue(function(ratio:Number):void {
+        Static.assetManager.loadQueue(function(ratio:Number):void {
             trace('loading...', ratio);
             if (ratio >= 1.0) {
                 onAssetsLoaded();

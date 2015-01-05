@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="bonus.png">
+	<!-- Created with Adobe Flash Professional version 14.0.0.110 -->
+	<!-- http://www.adobe.com/products/flash.html -->
+	<SubTexture name="Occurrence spirale 10000" x="0" y="0" width="95" height="93" pivotX="78.3" pivotY="16.45"/>
+	<SubTexture name="Occurrence spirale 10001" x="95" y="0" width="94" height="93" frameX="-1" frameY="0" frameWidth="95" frameHeight="93"/>
+	<SubTexture name="Occurrence spirale 10002" x="189" y="0" width="93" height="93" frameX="-2" frameY="0" frameWidth="95" frameHeight="93"/>
+	<SubTexture name="Occurrence spirale 10003" x="282" y="0" width="92" height="93" frameX="-4" frameY="0" frameWidth="95" frameHeight="93"/>
+	<SubTexture name="Occurrence spirale 10004" x="374" y="0" width="89" height="92" frameX="-7" frameY="0" frameWidth="95" frameHeight="93"/>
+	<SubTexture name="Occurrence spirale 10005" x="0" y="93" width="90" height="92" frameX="-6" frameY="0" frameWidth="95" frameHeight="93"/>
+	<SubTexture name="Occurrence spirale 10006" x="90" y="93" width="92" height="91" frameX="-4" frameY="0" frameWidth="95" frameHeight="93"/>
+	<SubTexture name="Occurrence spirale 10007" x="182" y="93" width="93" height="91" frameX="-3" frameY="0" frameWidth="95" frameHeight="93"/>
+	<SubTexture name="Occurrence spirale 10008" x="275" y="93" width="93" height="90" frameX="-2" frameY="-1" frameWidth="95" frameHeight="93"/>
+	<SubTexture name="Occurrence spirale 10009" x="368" y="93" width="94" height="91" frameX="-1" frameY="-1" frameWidth="95" frameHeight="93"/>
+	<SubTexture name="Occurrence spirale 10010" x="0" y="185" width="95" height="91" frameX="0" frameY="-1" frameWidth="95" frameHeight="93"/>
+	<SubTexture name="Occurrence spirale 10011" x="95" y="185" width="95" height="91" frameX="0" frameY="-1" frameWidth="95" frameHeight="93"/>
+	<SubTexture name="Occurrence spirale 10012" x="190" y="185" width="95" height="89" frameX="0" frameY="-1" frameWidth="95" frameHeight="93"/>
+	<SubTexture name="Occurrence spirale 10013" x="285" y="185" width="95" height="87" frameX="0" frameY="-1" frameWidth="95" frameHeight="93"/>
+	<SubTexture name="Occurrence spirale 10014" x="380" y="185" width="95" height="85" frameX="0" frameY="-1" frameWidth="95" frameHeight="93"/>
+	<SubTexture name="Occurrence spirale 10015" x="0" y="276" width="94" height="87" frameX="0" frameY="-1" frameWidth="95" frameHeight="93"/>
+	<SubTexture name="Occurrence spirale 10016" x="94" y="276" width="94" height="88" frameX="0" frameY="-1" frameWidth="95" frameHeight="93"/>
+	<SubTexture name="Occurrence spirale 10017" x="188" y="276" width="94" height="89" frameX="0" frameY="-1" frameWidth="95" frameHeight="93"/>
+	<SubTexture name="Occurrence spirale 10018" x="282" y="276" width="93" height="90" frameX="-1" frameY="-1" frameWidth="95" frameHeight="93"/>
+	<SubTexture name="Occurrence spirale 10019" x="375" y="276" width="93" height="91" frameX="-1" frameY="-1" frameWidth="95" frameHeight="93"/>
+	<SubTexture name="Occurrence spirale 10020" x="0" y="367" width="94" height="91" frameX="-1" frameY="-1" frameWidth="95" frameHeight="93"/>
+	<SubTexture name="Occurrence spirale 10021" x="94" y="367" width="93" height="92" frameX="-1" frameY="-1" frameWidth="95" frameHeight="93"/>
+	<SubTexture name="Occurrence spirale 10022" x="187" y="367" width="91" height="92" frameX="-1" frameY="-1" frameWidth="95" frameHeight="93"/>
+	<SubTexture name="Occurrence spirale 10023" x="278" y="367" width="89" height="92" frameX="-1" frameY="-1" frameWidth="95" frameHeight="93"/>
+	<SubTexture name="Occurrence spirale 10024" x="367" y="367" width="88" height="92" frameX="-1" frameY="-1" frameWidth="95" frameHeight="93"/>
+	<SubTexture name="Occurrence spirale 10025" x="0" y="459" width="89" height="90" frameX="-1" frameY="-2" frameWidth="95" frameHeight="93"/>
+	<SubTexture name="Occurrence spirale 10026" x="89" y="459" width="90" height="90" frameX="-1" frameY="-2" frameWidth="95" frameHeight="93"/>
+	<SubTexture name="Occurrence spirale 10027" x="179" y="459" width="92" height="90" frameX="-1" frameY="-2" frameWidth="95" frameHeight="93"/>
+	<SubTexture name="Occurrence spirale 10028" x="271" y="459" width="93" height="90" frameX="-1" frameY="-2" frameWidth="95" frameHeight="93"/>
+	<SubTexture name="Occurrence spirale 10029" x="364" y="459" width="93" height="91" frameX="-1" frameY="-1" frameWidth="95" frameHeight="93"/>
+	<SubTexture name="Occurrence spirale 10030" x="0" y="550" width="94" height="90" frameX="-1" frameY="-1" frameWidth="95" frameHeight="93"/>
+	<SubTexture name="Occurrence spirale 10031" x="94" y="550" width="94" height="89" frameX="-1" frameY="-2" frameWidth="95" frameHeight="93"/>
+	<SubTexture name="Occurrence spirale 10032" x="188" y="550" width="94" height="89" frameX="-1" frameY="-4" frameWidth="95" frameHeight="93"/>
+	<SubTexture name="Occurrence spirale 10033" x="282" y="550" width="94" height="87" frameX="-1" frameY="-6" frameWidth="95" frameHeight="93"/>
+	<SubTexture name="Occurrence spirale 10034" x="376" y="550" width="94" height="87" frameX="-1" frameY="-6" frameWidth="95" frameHeight="93"/>
+	<SubTexture name="Occurrence spirale 10035" x="0" y="640" width="93" height="88" frameX="-2" frameY="-5" frameWidth="95" frameHeight="93"/>
+	<SubTexture name="Occurrence spirale 10036" x="93" y="640" width="93" height="89" frameX="-2" frameY="-4" frameWidth="95" frameHeight="93"/>
+	<SubTexture name="Occurrence spirale 10037" x="186" y="640" width="93" height="90" frameX="-2" frameY="-3" frameWidth="95" frameHeight="93"/>
+	<SubTexture name="Occurrence spirale 10038" x="279" y="640" width="92" height="90" frameX="-2" frameY="-2" frameWidth="95" frameHeight="93"/>
+	<SubTexture name="Occurrence spirale 10039" x="371" y="640" width="93" height="91" frameX="-1" frameY="-1" frameWidth="95" frameHeight="93"/>
+</TextureAtlas>
