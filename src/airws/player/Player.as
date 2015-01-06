@@ -18,7 +18,8 @@ public class Player extends Sprite {
     private var velY: Number = 0;
 
     private var friction:Number = 0.05;
-    private var isJumping:Boolean= false;
+    private var isJumping:Boolean = false;
+    private var doubleJumped = false;
 
     public function Player() {
 //        playerMovieClip = new MovieClip(Static.assetManager.getTextureAtlas("normalPerso").getTextures(), 30);
@@ -35,9 +36,14 @@ public class Player extends Sprite {
 
     public function jump():void {
         if (canJump()){
+            doubleJumped = false;
             isJumping = true;
             velY = Static.currentGameState.getJumpForce();
             playerMovieClip.setFrameDuration(playerMovieClip.numFrames - 1, 999);
+        }
+        else if (canDoubleJump()) {
+            doubleJumped = true;
+            velY = Static.currentGameState.getJumpForce();
         }
     }
 
@@ -47,6 +53,10 @@ public class Player extends Sprite {
 
     private function canJump():Boolean {
         return !isJumping || (playerBaseY - playerMovieClip.y < 50);
+    }
+
+    private function canDoubleJump():Boolean {
+        return isJumping && !doubleJumped;
     }
 
     public function updatePosition(time:Number):void {
@@ -73,6 +83,14 @@ public class Player extends Sprite {
         Starling.juggler.add(playerMovieClip);
         playerMovieClip.play();
         addChild(playerMovieClip);
+    }
+
+    public function pauseMovieClip():void {
+        playerMovieClip.pause();
+    }
+
+    public function playMovieClip():void {
+        playerMovieClip.play();
     }
 }
 }

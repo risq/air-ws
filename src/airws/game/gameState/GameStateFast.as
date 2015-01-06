@@ -12,15 +12,15 @@ public class GameStateFast implements GameState{
     }
 
     public function getMoveSpeed():uint {
-        return 450;
+        return 700;
     }
 
     public function getJumpForce():uint {
-        return 3500;
+        return 2600;
     }
 
     public function getGravityForce():uint {
-        return 120;
+        return 130;
     }
 
     public function getPlayerSprite():String {
@@ -52,11 +52,11 @@ public class GameStateFast implements GameState{
     }
 
     public function getGroundSpriteName():String {
-        return "normalSol";
+        return "rapideSol";
     }
 
     public function getCeilingSpriteName():String {
-        return "lentPlafond";
+        return "rapidePlafond";
     }
 
     public function getEnemySpriteName(type:uint):String {

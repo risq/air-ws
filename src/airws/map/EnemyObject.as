@@ -26,11 +26,8 @@ public class EnemyObject extends Sprite implements MapObject {
     }
 
     public function setSprite():void {
-        trace("Setting enemy sprite to", Static.currentGameState.getEnemySpriteName(enemyType));
         removeChild(objectMovieClip);
         objectMovieClip = new MovieClip(Static.assetManager.getTextureAtlas(Static.currentGameState.getEnemySpriteName(enemyType)).getTextures(), 30);
-//        objectMovieClip.x = - objectMovieClip.width  / 2;
-//        objectMovieClip.y = - objectMovieClip.height / 2;
         Starling.juggler.add(objectMovieClip);
         objectMovieClip.play();
         addChild(objectMovieClip);

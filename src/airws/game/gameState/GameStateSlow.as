@@ -9,11 +9,11 @@ public class GameStateSlow implements GameState{
     }
 
     public function getMoveSpeed():uint {
-        return 150;
+        return 300;
     }
 
     public function getJumpForce():uint {
-        return 1800;
+        return 1200;
     }
 
     public function getGravityForce():uint {
@@ -41,7 +41,7 @@ public class GameStateSlow implements GameState{
     }
 
     public function getPlane2SpriteName():String {
-        return "normalPlan2";
+        return "lentPlan2";
     }
 
     public function getPlane3SpriteName():String {
@@ -64,7 +64,7 @@ public class GameStateSlow implements GameState{
             return "lentEnnemi2";
         }
         else if (type == 3) {
-            return "lentEnnemi2";
+            return "lentEnnemi3";
         }
         return null;
     }

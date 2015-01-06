@@ -15,27 +15,29 @@ public class MainMenuUI extends Sprite {
 
     private var startButton:Button;
     private var highScoresButton:Button;
-    private var buttonsContainer:Sprite;
 
     public function MainMenuUI() {
 
     }
 
     public function init() {
-        buttonsContainer = new Sprite();
-        addChild(buttonsContainer);
 
-        startButton = new Button(Static.assetManager.getTexture("button"), "Start");
+        startButton = new Button(Static.assetManager.getTexture("boutonPlay"), "", Static.assetManager.getTexture("boutonPlay_hover"));
         startButton.addEventListener(Event.TRIGGERED, onButtonStartTriggered);
-        buttonsContainer.addChild(startButton);
+        startButton.alignPivot();
+        addChild(startButton);
+        startButton.x = stage.stageWidth / 2;
+        startButton.y = stage.stageHeight / 2;
 
-        highScoresButton = new Button(Static.assetManager.getTexture("button"), "High Scores");
+
+
+        highScoresButton = new Button(Static.assetManager.getTexture("boutonHS"), "", Static.assetManager.getTexture("boutonHS_hover"));
         highScoresButton.addEventListener(Event.TRIGGERED, onButtonStartTriggered);
         highScoresButton.y = 100;
-        buttonsContainer.addChild(highScoresButton);
+        addChild(highScoresButton);
+        highScoresButton.x = stage.stageWidth - highScoresButton.width;
+        highScoresButton.y = stage.stageHeight - highScoresButton.height;
 
-        buttonsContainer.x = stage.stageWidth / 2 - buttonsContainer.width / 2;
-        buttonsContainer.y = stage.stageHeight / 2 - buttonsContainer.height / 2;
     }
 
     private function onButtonStartTriggered(event:Event):void

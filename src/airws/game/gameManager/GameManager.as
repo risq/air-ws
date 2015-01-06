@@ -29,6 +29,7 @@ public class GameManager extends EventDispatcher {
     private var gameStateNormal:GameStateNormal;
     private var gameStateFast:GameStateFast;
     private var gameStateSlow:GameStateSlow;
+    private var newState:GameState;
 
     //private var assetManager:AssetManager;
 
@@ -59,17 +60,17 @@ public class GameManager extends EventDispatcher {
         game.loadLevel(3);
         Starling.juggler.add(game);
 
+        changeState(gameStateNormal);
+
     }
 
     private function stopGame():void {
-//        Starling.juggler.remove(game);
         game.stop();
     }
 
     public function startGame():void {
         changeState(gameStateNormal);
         game.start();
-//        Starling.juggler.add(game);
     }
 
     public function resetGame():void {
@@ -131,7 +132,13 @@ public class GameManager extends EventDispatcher {
             }
         }
 
-        changeState(newGameState);
+        newState = newGameState;
+        game.pause();
+        game.level.scene.transition.animate(onTransitionDone);
+    }
+
+    private function onTransitionDone() {
+        changeState(newState);
     }
 
     private function changeState(gameState:GameState) {
@@ -147,6 +154,8 @@ public class GameManager extends EventDispatcher {
                 Static.currentGameState.getCeilingSpriteName());
 
         game.level.map.updateEnemySprites();
+
+        game.unpause();
     }
 
 

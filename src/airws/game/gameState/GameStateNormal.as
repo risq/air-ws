@@ -12,11 +12,11 @@ public class GameStateNormal implements GameState{
     }
 
     public function getMoveSpeed():uint {
-        return 250;
+        return 500;
     }
 
     public function getJumpForce():uint {
-        return 3200;
+        return 2200;
     }
 
     public function getGravityForce():uint {
@@ -56,7 +56,7 @@ public class GameStateNormal implements GameState{
     }
 
     public function getCeilingSpriteName():String {
-        return "lentPlafond";
+        return "normalPlafond";
     }
 
     public function getEnemySpriteName(type:uint):String {
@@ -67,7 +67,7 @@ public class GameStateNormal implements GameState{
             return "normalEnnemi2";
         }
         else if (type == 3) {
-            return "normalEnnemi2";
+            return "normalEnnemi3";
         }
         return null;
     }

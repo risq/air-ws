@@ -18,22 +18,22 @@ public class Scene extends Sprite {
     private var mountain2:BackgroundPlane;
     private var fx:BackgroundPlane;
 
-
-    public var playerPlane:Sprite;
-    public var mapPlane:Sprite;
-
     private var mask:Image;
     private var bg:Quad;
 
     private var _tintColor:uint;
 
+    public var playerPlane:Sprite;
+    public var mapPlane:Sprite;
+    public var transition:Transition;
+
     public function Scene() {
         //clouds1   = new BackgroundPlane(Constant.assetManager.getTexture("clouds1"), 15, BackgroundPlane.TOP_ALIGNED_PLANE);
         //clouds2   = new BackgroundPlane(Constant.assetManager.getTexture("clouds2"), 20, BackgroundPlane.TOP_ALIGNED_PLANE);
-        ground    = new BackgroundPlane(Static.assetManager.getTexture("normalSol"),     5, BackgroundPlane.BOTTOM_ALIGNED_PLANE);
-        ceiling   = new BackgroundPlane(Static.assetManager.getTexture("lentPlafond"),     5, BackgroundPlane.TOP_ALIGNED_PLANE);
-        plan3     = new BackgroundPlane(Static.assetManager.getTexture("normalPlan3"), 40, BackgroundPlane.BOTTOM_ALIGNED_PLANE);
-        plan2     = new BackgroundPlane(Static.assetManager.getTexture("normalPlan2"), 45, BackgroundPlane.TOP_ALIGNED_PLANE);
+        ground    = new BackgroundPlane(Static.assetManager.getTexture("normalSol"),     13, BackgroundPlane.BOTTOM_ALIGNED_PLANE);
+        ceiling   = new BackgroundPlane(Static.assetManager.getTexture("lentPlafond"),     13, BackgroundPlane.TOP_ALIGNED_PLANE);
+        plan3     = new BackgroundPlane(Static.assetManager.getTexture("normalPlan3"), 45, BackgroundPlane.BOTTOM_ALIGNED_PLANE);
+        plan2     = new BackgroundPlane(Static.assetManager.getTexture("normalPlan2"), 30, BackgroundPlane.TOP_ALIGNED_PLANE);
         plan1     = new BackgroundPlane(Static.assetManager.getTexture("normalPlan1"), 25, BackgroundPlane.BOTTOM_ALIGNED_PLANE);
         fx        = new BackgroundPlane(Static.assetManager.getTexture("fx"), 20, BackgroundPlane.BOTTOM_ALIGNED_PLANE);
         //mountain2 = new BackgroundPlane(Constant.assetManager.getTexture("mountain2"), 40, BackgroundPlane.FULL_HEIGHT_PLANE);
@@ -45,6 +45,8 @@ public class Scene extends Sprite {
 
         mapPlane = new Sprite();
         playerPlane = new Sprite();
+
+        transition = new Transition();
 
     }
 
@@ -65,11 +67,17 @@ public class Scene extends Sprite {
 
         addChild(mask);
 
+        addChild(transition);
+        transition.init();
+
+
+
 //        var tween:Tween = new Tween(this, 5);
 //        tween.animate("tintColor", 0xff0000);
 //        Starling.juggler.add(tween);
 
     }
+
 
     private function initBackgroundPane(backgroundPane: BackgroundPlane) {
         addChild(backgroundPane);
@@ -98,6 +106,24 @@ public class Scene extends Sprite {
         plan3.setTexture(Static.assetManager.getTexture(plane3SpriteName));
         ground.setTexture(Static.assetManager.getTexture(groundSpriteName));
         ceiling.setTexture(Static.assetManager.getTexture(ceilingSpriteName));
+    }
+
+    public function pausePanes() {
+        plan1.pause();
+        plan2.pause();
+        plan3.pause();
+        ground.pause();
+        ceiling.pause();
+        fx.pause();
+    }
+
+    public function unpausePanes() {
+        plan1.unpause();
+        plan2.unpause();
+        plan3.unpause();
+        ground.unpause();
+        ceiling.unpause();
+        fx.unpause();
     }
 }
 }

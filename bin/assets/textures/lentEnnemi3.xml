@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="lentEnnemi3.png">
+	<!-- Created with Adobe Flash Professional version 14.0.0.110 -->
+	<!-- http://www.adobe.com/products/flash.html -->
+	<SubTexture name="Occurrence lentEnnemi3-anim2 10000" x="0" y="0" width="119" height="87" pivotX="39.35" pivotY="43.85" frameX="0" frameY="0" frameWidth="125" frameHeight="87"/>
+	<SubTexture name="Occurrence lentEnnemi3-anim2 10001" x="0" y="0" width="119" height="87" frameX="0" frameY="0" frameWidth="125" frameHeight="87"/>
+	<SubTexture name="Occurrence lentEnnemi3-anim2 10002" x="0" y="0" width="119" height="87" frameX="0" frameY="0" frameWidth="125" frameHeight="87"/>
+	<SubTexture name="Occurrence lentEnnemi3-anim2 10003" x="0" y="0" width="119" height="87" frameX="0" frameY="0" frameWidth="125" frameHeight="87"/>
+	<SubTexture name="Occurrence lentEnnemi3-anim2 10004" x="0" y="0" width="119" height="87" frameX="0" frameY="0" frameWidth="125" frameHeight="87"/>
+	<SubTexture name="Occurrence lentEnnemi3-anim2 10005" x="0" y="0" width="119" height="87" frameX="0" frameY="0" frameWidth="125" frameHeight="87"/>
+	<SubTexture name="Occurrence lentEnnemi3-anim2 10006" x="119" y="0" width="124" height="87" frameX="0" frameY="0" frameWidth="125" frameHeight="87"/>
+	<SubTexture name="Occurrence lentEnnemi3-anim2 10007" x="119" y="0" width="124" height="87" frameX="0" frameY="0" frameWidth="125" frameHeight="87"/>
+	<SubTexture name="Occurrence lentEnnemi3-anim2 10008" x="119" y="0" width="124" height="87" frameX="0" frameY="0" frameWidth="125" frameHeight="87"/>
+	<SubTexture name="Occurrence lentEnnemi3-anim2 10009" x="119" y="0" width="124" height="87" frameX="0" frameY="0" frameWidth="125" frameHeight="87"/>
+	<SubTexture name="Occurrence lentEnnemi3-anim2 10010" x="119" y="0" width="124" height="87" frameX="0" frameY="0" frameWidth="125" frameHeight="87"/>
+	<SubTexture name="Occurrence lentEnnemi3-anim2 10011" x="119" y="0" width="124" height="87" frameX="0" frameY="0" frameWidth="125" frameHeight="87"/>
+	<SubTexture name="Occurrence lentEnnemi3-anim2 10012" x="0" y="87" width="125" height="86" frameX="0" frameY="-1" frameWidth="125" frameHeight="87"/>
+	<SubTexture name="Occurrence lentEnnemi3-anim2 10013" x="0" y="87" width="125" height="86" frameX="0" frameY="-1" frameWidth="125" frameHeight="87"/>
+	<SubTexture name="Occurrence lentEnnemi3-anim2 10014" x="0" y="87" width="125" height="86" frameX="0" frameY="-1" frameWidth="125" frameHeight="87"/>
+	<SubTexture name="Occurrence lentEnnemi3-anim2 10015" x="0" y="87" width="125" height="86" frameX="0" frameY="-1" frameWidth="125" frameHeight="87"/>
+	<SubTexture name="Occurrence lentEnnemi3-anim2 10016" x="0" y="87" width="125" height="86" frameX="0" frameY="-1" frameWidth="125" frameHeight="87"/>
+	<SubTexture name="Occurrence lentEnnemi3-anim2 10017" x="0" y="87" width="125" height="86" frameX="0" frameY="-1" frameWidth="125" frameHeight="87"/>
+	<SubTexture name="Occurrence lentEnnemi3-anim2 10018" x="119" y="0" width="124" height="87" frameX="0" frameY="0" frameWidth="125" frameHeight="87"/>
+	<SubTexture name="Occurrence lentEnnemi3-anim2 10019" x="119" y="0" width="124" height="87" frameX="0" frameY="0" frameWidth="125" frameHeight="87"/>
+	<SubTexture name="Occurrence lentEnnemi3-anim2 10020" x="119" y="0" width="124" height="87" frameX="0" frameY="0" frameWidth="125" frameHeight="87"/>
+	<SubTexture name="Occurrence lentEnnemi3-anim2 10021" x="119" y="0" width="124" height="87" frameX="0" frameY="0" frameWidth="125" frameHeight="87"/>
+	<SubTexture name="Occurrence lentEnnemi3-anim2 10022" x="119" y="0" width="124" height="87" frameX="0" frameY="0" frameWidth="125" frameHeight="87"/>
+	<SubTexture name="Occurrence lentEnnemi3-anim2 10023" x="119" y="0" width="124" height="87" frameX="0" frameY="0" frameWidth="125" frameHeight="87"/>
+</TextureAtlas>

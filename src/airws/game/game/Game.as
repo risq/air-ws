@@ -26,6 +26,7 @@ public class Game extends Sprite implements IAnimatable {
     public var level:Level;
     public var player:Player;
     private var started:Boolean = false;
+    private var paused:Boolean = false;
     private var levelLoader:LevelLoader;
 
     public function Game() {
@@ -44,24 +45,41 @@ public class Game extends Sprite implements IAnimatable {
     public function start(): void {
         if (!isStarted()) {
             started = true;
+            unpause();
             var gameStarted:GameEvent = new GameEvent(GameEvent.GAME_STARTED);
             dispatchEvent(gameStarted);
         }
     }
 
     public function pause():void {
-        if (isStarted()) {
-            started = false;
+        if (!isPaused()) {
+            trace("pause game");
+            paused = true;
+            level.scene.pausePanes();
+            player.pauseMovieClip();
+        }
+    }
+
+    public function unpause():void {
+        if (isPaused()) {
+            trace("unpause game");
+            paused = false;
+            level.scene.unpausePanes();
+            player.playMovieClip();
         }
     }
 
     public function stop():void {
-        pause();
+        started = false;
         level.loadMap();
     }
 
     public function isStarted(): Boolean{
         return started;
+    }
+
+    public function isPaused(): Boolean{
+        return paused;
     }
 
     private function onLevelLoaded(event:LevelLoaderEvent):void {
@@ -107,7 +125,7 @@ public class Game extends Sprite implements IAnimatable {
 
     public function advanceTime(time:Number):void {
         player.updatePosition(time);
-        if (isStarted()) {
+        if (isStarted() && !isPaused()) {
             level.updatePosition(time, player.getBounds(level));
         }
     }

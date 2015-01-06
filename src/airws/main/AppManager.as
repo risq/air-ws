@@ -36,7 +36,7 @@ public class AppManager extends Sprite
         Static.assetManager.enqueue(appDir.resolvePath("assets/"));
 
         Static.assetManager.loadQueue(function(ratio:Number):void {
-            trace('loading...', ratio);
+//            trace('loading...', ratio);
             if (ratio >= 1.0) {
                 onAssetsLoaded();
             }

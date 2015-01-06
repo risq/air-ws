@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="normalEnnemi3.png">
+	<!-- Created with Adobe Flash Professional version 14.0.0.110 -->
+	<!-- http://www.adobe.com/products/flash.html -->
+	<SubTexture name="Occurrence araignée 10000" x="0" y="0" width="164" height="98" pivotX="85.95" pivotY="15.7"/>
+	<SubTexture name="Occurrence araignée 10001" x="0" y="0" width="164" height="98"/>
+	<SubTexture name="Occurrence araignée 10002" x="0" y="0" width="164" height="98"/>
+	<SubTexture name="Occurrence araignée 10003" x="0" y="0" width="164" height="98"/>
+	<SubTexture name="Occurrence araignée 10004" x="0" y="0" width="164" height="98"/>
+	<SubTexture name="Occurrence araignée 10005" x="0" y="98" width="144" height="88" frameX="-4" frameY="0" frameWidth="164" frameHeight="98"/>
+	<SubTexture name="Occurrence araignée 10006" x="0" y="98" width="144" height="88" frameX="-4" frameY="0" frameWidth="164" frameHeight="98"/>
+	<SubTexture name="Occurrence araignée 10007" x="0" y="98" width="144" height="88" frameX="-4" frameY="0" frameWidth="164" frameHeight="98"/>
+	<SubTexture name="Occurrence araignée 10008" x="0" y="98" width="144" height="88" frameX="-4" frameY="0" frameWidth="164" frameHeight="98"/>
+	<SubTexture name="Occurrence araignée 10009" x="0" y="98" width="144" height="88" frameX="-4" frameY="0" frameWidth="164" frameHeight="98"/>
+	<SubTexture name="Occurrence araignée 10010" x="0" y="98" width="144" height="88" frameX="-4" frameY="0" frameWidth="164" frameHeight="98"/>
+	<SubTexture name="Occurrence araignée 10011" x="0" y="186" width="159" height="87" frameX="-3" frameY="0" frameWidth="164" frameHeight="98"/>
+	<SubTexture name="Occurrence araignée 10012" x="0" y="186" width="159" height="87" frameX="-3" frameY="0" frameWidth="164" frameHeight="98"/>
+	<SubTexture name="Occurrence araignée 10013" x="0" y="186" width="159" height="87" frameX="-3" frameY="0" frameWidth="164" frameHeight="98"/>
+	<SubTexture name="Occurrence araignée 10014" x="0" y="186" width="159" height="87" frameX="-3" frameY="0" frameWidth="164" frameHeight="98"/>
+	<SubTexture name="Occurrence araignée 10015" x="0" y="186" width="159" height="87" frameX="-3" frameY="0" frameWidth="164" frameHeight="98"/>
+	<SubTexture name="Occurrence araignée 10016" x="0" y="273" width="143" height="91" frameX="-5" frameY="0" frameWidth="164" frameHeight="98"/>
+	<SubTexture name="Occurrence araignée 10017" x="0" y="273" width="143" height="91" frameX="-5" frameY="0" frameWidth="164" frameHeight="98"/>
+	<SubTexture name="Occurrence araignée 10018" x="0" y="273" width="143" height="91" frameX="-5" frameY="0" frameWidth="164" frameHeight="98"/>
+	<SubTexture name="Occurrence araignée 10019" x="0" y="273" width="143" height="91" frameX="-5" frameY="0" frameWidth="164" frameHeight="98"/>
+	<SubTexture name="Occurrence araignée 10020" x="0" y="273" width="143" height="91" frameX="-5" frameY="0" frameWidth="164" frameHeight="98"/>
+	<SubTexture name="Occurrence araignée 10021" x="0" y="273" width="143" height="91" frameX="-5" frameY="0" frameWidth="164" frameHeight="98"/>
+</TextureAtlas>

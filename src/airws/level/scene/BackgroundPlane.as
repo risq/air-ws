@@ -75,5 +75,13 @@ public class BackgroundPlane extends Sprite {
         image1.texture = texture;
         image2.texture = texture;
     }
+
+    public function pause() {
+        Starling.juggler.remove(tween);
+    }
+
+    public function unpause() {
+        Starling.juggler.add(tween);
+    }
 }
 }
